@@ -1,0 +1,31 @@
+{
+  "roles": {
+    "brand": "Identity color. Used for logos, wordmarks, brand moments only.",
+    "primary": "Primary interactive color. Buttons, links, active states, focus rings.",
+    "primary-hover": "Primary on hover/press.",
+    "primary-subtle": "Low-emphasis primary. Backgrounds behind primary text, chips.",
+    "accent": "Secondary interactive color. Badges, tags, highlights, secondary CTAs.",
+    "accent-hover": "Accent on hover.",
+    "accent-subtle": "Low-emphasis accent background.",
+    "neutral-900": "Strongest text. Headings, primary body copy on light.",
+    "neutral-700": "Secondary text. Subheadings, captions, supporting copy.",
+    "neutral-500": "Tertiary text. Placeholders, disabled labels.",
+    "neutral-300": "Borders, dividers.",
+    "neutral-100": "Subtle backgrounds. Hover states on neutral elements.",
+    "neutral-50": "Page background alternate. Striped table rows.",
+    "surface": "Primary surface. Main background, card backgrounds.",
+    "surface-raised": "Elevated surface. Cards, modals, dropdowns (one level above surface).",
+    "surface-overlay": "Highest elevation. Tooltips, popovers.",
+    "error": "Destructive actions, validation errors.",
+    "error-subtle": "Error state background.",
+    "success": "Confirmation, completion states.",
+    "success-subtle": "Success state background.",
+    "warning": "Cautionary states, alerts.",
+    "warning-subtle": "Warning state background.",
+    "info": "Informational callouts.",
+    "info-subtle": "Info state background.",
+    "focus-ring": "Keyboard focus outline. Accessibility critical.",
+    "text-on-primary": "Text/icon color when placed on primary background.",
+    "text-on-accent": "Text/icon color when placed on accent background."
+  }
+}

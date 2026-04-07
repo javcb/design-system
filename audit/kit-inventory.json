@@ -1,0 +1,601 @@
+{
+  "repos": [
+    {
+      "name": "appy-next",
+      "framework": "Next.js + Tailwind",
+      "components": [
+        "Cta",
+        "CtaContact",
+        "Dialog",
+        "DialogBackdrop",
+        "DialogPanel",
+        "Dropdown",
+        "FeaturesAnimation",
+        "FeaturesBlocks",
+        "FeaturesGallery",
+        "Footer",
+        "HTMLButtonElement",
+        "Header",
+        "Hero",
+        "HeroAbout",
+        "HeroHelp",
+        "HeroHome",
+        "HeroTestimonials",
+        "MobileMenu",
+        "ModalVideo",
+        "ModalVideoIphone",
+        "PricingTables",
+        "Sidebar",
+        "Tabs"
+      ],
+      "tokens": {
+        "colors": {
+          "note": "Uses Tailwind defaults or custom theme overrides"
+        },
+        "spacing": {
+          "note": "Tailwind spacing scale (0.25rem increments)"
+        },
+        "typography": {
+          "note": "System fonts or Tailwind defaults"
+        }
+      }
+    },
+    {
+      "name": "black-dashboard-pro-angular",
+      "framework": "Angular + Bootstrap",
+      "components": [
+        "AuthNavbarComponent",
+        "ButtonsComponent",
+        "FooterComponent",
+        "Forms",
+        "FormsRoutes",
+        "NavbarComponent",
+        "NgxDatatablesComponent",
+        "RtlNavbarComponent",
+        "RtlSidebarComponent",
+        "SidebarComponent",
+        "SweetalertComponent",
+        "TablesModule",
+        "TablesRoutes"
+      ],
+      "tokens": {
+        "colors": {
+          "note": "Uses Tailwind defaults or custom theme overrides"
+        },
+        "spacing": {
+          "note": "Tailwind spacing scale (0.25rem increments)"
+        },
+        "typography": {
+          "note": "System fonts or Tailwind defaults"
+        }
+      }
+    },
+    {
+      "name": "community-next",
+      "framework": "Next.js + Tailwind",
+      "components": [
+        "Footer",
+        "Header",
+        "HeaderLogo",
+        "Hero",
+        "Sidebar"
+      ],
+      "tokens": {
+        "colors": {
+          "note": "Uses Tailwind defaults or custom theme overrides"
+        },
+        "spacing": {
+          "note": "Tailwind spacing scale (0.25rem increments)"
+        },
+        "typography": {
+          "note": "System fonts or Tailwind defaults"
+        }
+      }
+    },
+    {
+      "name": "creative-next",
+      "framework": "Next.js + Tailwind",
+      "components": [
+        "Cta",
+        "Footer",
+        "Header",
+        "Hero"
+      ],
+      "tokens": {
+        "colors": {
+          "note": "Uses Tailwind defaults or custom theme overrides"
+        },
+        "spacing": {
+          "note": "Tailwind spacing scale (0.25rem increments)"
+        },
+        "typography": {
+          "note": "System fonts or Tailwind defaults"
+        }
+      }
+    },
+    {
+      "name": "docs-next",
+      "framework": "Next.js + Tailwind",
+      "components": [
+        "Dialog",
+        "DialogBackdrop",
+        "DialogPanel",
+        "Footer",
+        "Header",
+        "ModalVideo",
+        "PageNavigation",
+        "PostTable",
+        "SearchModal",
+        "SecondaryNav",
+        "Sidebar",
+        "SidebarLink",
+        "SidebarLinkGroup",
+        "SidebarLinkSubgroup",
+        "SupportSidebar",
+        "TableBody",
+        "TableBodyRow",
+        "TableHead",
+        "TableHeadRow",
+        "TableTd",
+        "TableTh"
+      ],
+      "tokens": {
+        "colors": {
+          "note": "Uses Tailwind defaults or custom theme overrides"
+        },
+        "spacing": {
+          "note": "Tailwind spacing scale (0.25rem increments)"
+        },
+        "typography": {
+          "note": "System fonts or Tailwind defaults"
+        }
+      }
+    },
+    {
+      "name": "fintech-next",
+      "framework": "Next.js + Tailwind",
+      "components": [
+        "Cta",
+        "Footer",
+        "Header",
+        "Hero",
+        "SidebarLink",
+        "SidebarLinkGroup",
+        "SupportFooter",
+        "SupportHeader",
+        "SupportSidebar"
+      ],
+      "tokens": {
+        "colors": {
+          "note": "Uses Tailwind defaults or custom theme overrides"
+        },
+        "spacing": {
+          "note": "Tailwind spacing scale (0.25rem increments)"
+        },
+        "typography": {
+          "note": "System fonts or Tailwind defaults"
+        }
+      }
+    },
+    {
+      "name": "nextjs-saas-starter",
+      "framework": "Next.js + Tailwind + Supabase",
+      "components": [
+        "Alert",
+        "AlertDescription",
+        "AlertDialog",
+        "AlertDialogAction",
+        "AlertDialogCancel",
+        "AlertDialogContent",
+        "AlertDialogDescription",
+        "AlertDialogFooter",
+        "AlertDialogHeader",
+        "AlertDialogOverlay",
+        "AlertDialogPortal",
+        "AlertDialogPrimitive",
+        "AlertDialogTitle",
+        "AlertDialogTrigger",
+        "AlertTitle",
+        "AppBreadcrumbs",
+        "AuthButtons",
+        "AuthCallbackForm",
+        "AuthErrorAlert",
+        "AuthProviderButton",
+        "Avatar",
+        "AvatarFallback",
+        "AvatarImage",
+        "AvatarPrimitive",
+        "Badge",
+        "BadgeWithTrend",
+        "BorderedNavigationMenu",
+        "BorderedNavigationMenuItem",
+        "Breadcrumb",
+        "BreadcrumbEllipsis",
+        "BreadcrumbItem",
+        "BreadcrumbLink",
+        "BreadcrumbList",
+        "BreadcrumbSeparator",
+        "Button",
+        "ButtonProps",
+        "Card",
+        "CardButton",
+        "CardButtonContent",
+        "CardButtonFooter",
+        "CardButtonHeader",
+        "CardButtonTitle",
+        "CardContent",
+        "CardDescription",
+        "CardFooter",
+        "CardHeader",
+        "CardTitle",
+        "ChartContainer",
+        "ChartTooltip",
+        "ChartTooltipContent"
+      ],
+      "tokens": {
+        "colors": {
+          "note": "Uses Tailwind defaults or custom theme overrides"
+        },
+        "spacing": {
+          "note": "Tailwind spacing scale (0.25rem increments)"
+        },
+        "typography": {
+          "note": "System fonts or Tailwind defaults"
+        }
+      }
+    },
+    {
+      "name": "react-native-expo-saas",
+      "framework": "React Native + Expo",
+      "components": [
+        "Alert",
+        "AlertActions",
+        "AlertDescription",
+        "AlertDialogOverlay",
+        "AlertDialogPortal",
+        "AlertDialogPrimitive",
+        "AlertIcon",
+        "AlertTitle",
+        "AuthPageLayoutForm",
+        "AuthPageLayoutSecondaryButton",
+        "AuthTabsLayout",
+        "AvatarPrimitiveFallback",
+        "AvatarPrimitiveImage",
+        "AvatarPrimitiveRoot",
+        "Button",
+        "Card",
+        "CardContent",
+        "CardDescription",
+        "CardHeader",
+        "CardTitle",
+        "CheckboxPrimitive",
+        "Database",
+        "DialogOverlay",
+        "DialogPortal",
+        "DialogPrimitive",
+        "DropdownMenuPrimitive",
+        "EmailPasswordResetForm",
+        "HoverCardPrimitive",
+        "Input",
+        "MainLayoutTabs",
+        "MenubarPrimitive",
+        "NAV_THEME",
+        "NavigationMenuPrimitive",
+        "NavigationMenuViewport",
+        "PickImageButton",
+        "RadioGroupPrimitive",
+        "SelectPrimitive",
+        "SelectScrollDownButton",
+        "SelectScrollUpButton",
+        "SignInForm",
+        "SignOutButton",
+        "SignUpForm",
+        "TablePrimitive",
+        "Tabs",
+        "TabsPrimitive",
+        "TextInput",
+        "Toaster",
+        "UpdateAccountContainer",
+        "UpdateEmailForm",
+        "UpdateEmailFormContainer"
+      ],
+      "tokens": {
+        "colors": {
+          "note": "Uses Tailwind defaults or custom theme overrides"
+        },
+        "spacing": {
+          "note": "Tailwind spacing scale (0.25rem increments)"
+        },
+        "typography": {
+          "note": "System fonts or Tailwind defaults"
+        }
+      }
+    },
+    {
+      "name": "_UI Sandbox",
+      "framework": "Next.js + Tailwind",
+      "components": [
+        "Alert",
+        "AlertActions",
+        "AlertBody",
+        "AlertDescription",
+        "AlertTitle",
+        "Avatar",
+        "Badge",
+        "BentoCard",
+        "Button",
+        "Card",
+        "Container",
+        "Dropdown",
+        "DropdownButton",
+        "DropdownDivider",
+        "DropdownMenu",
+        "Footer",
+        "Header",
+        "Navbar",
+        "Sidebar",
+        "Tabs",
+        "Modal",
+        "Form",
+        "Input",
+        "Textarea",
+        "Select",
+        "Checkbox",
+        "Radio",
+        "Table",
+        "DataGrid",
+        "Pagination",
+        "Toast",
+        "Breadcrumb"
+      ],
+      "tokens": {
+        "colors": {
+          "note": "Uses Tailwind defaults or custom theme overrides"
+        },
+        "spacing": {
+          "note": "Tailwind spacing scale (0.25rem increments)"
+        },
+        "typography": {
+          "note": "System fonts or Tailwind defaults"
+        }
+      }
+    },
+    {
+      "name": "catalyst-ui-kit",
+      "framework": "Next.js + Tailwind + Headless UI",
+      "components": [
+        "Alert",
+        "Avatar",
+        "Badge",
+        "Button",
+        "Card",
+        "Container",
+        "Dropdown",
+        "DropdownMenu",
+        "InputGroup",
+        "Navbar",
+        "Sidebar",
+        "Table",
+        "Tabs",
+        "Modal",
+        "Dialog",
+        "Form",
+        "Input",
+        "Label",
+        "Checkbox",
+        "Radio",
+        "Select",
+        "Textarea"
+      ],
+      "tokens": {
+        "colors": {
+          "note": "Uses Tailwind defaults or custom theme overrides"
+        },
+        "spacing": {
+          "note": "Tailwind spacing scale (0.25rem increments)"
+        },
+        "typography": {
+          "note": "System fonts or Tailwind defaults"
+        }
+      }
+    },
+    {
+      "name": "makerkit-lite",
+      "framework": "Next.js + Tailwind + Supabase",
+      "components": [
+        "AuthLayout",
+        "Navbar",
+        "Sidebar",
+        "DataTable",
+        "Footer",
+        "Button",
+        "Card",
+        "Form",
+        "Input",
+        "Modal",
+        "Dropdown",
+        "Hero",
+        "PageHeader",
+        "Navigation",
+        "Avatar",
+        "Badge",
+        "Breadcrumb",
+        "Tabs",
+        "Alert",
+        "Toast",
+        "Pagination"
+      ],
+      "tokens": {
+        "colors": {
+          "note": "Uses Tailwind defaults or custom theme overrides"
+        },
+        "spacing": {
+          "note": "Tailwind spacing scale (0.25rem increments)"
+        },
+        "typography": {
+          "note": "System fonts or Tailwind defaults"
+        }
+      }
+    },
+    {
+      "name": "paper-dashboard-html",
+      "framework": "HTML + CSS (Bootstrap-like)",
+      "components": [
+        "Button",
+        "Card",
+        "Table",
+        "Form",
+        "Input",
+        "Modal",
+        "Navbar",
+        "Sidebar",
+        "Dropdown",
+        "Badge",
+        "Alert",
+        "Pagination",
+        "Breadcrumb",
+        "Tabs",
+        "Panel",
+        "Progress",
+        "Tooltip"
+      ],
+      "tokens": {
+        "colors": {
+          "note": "Uses Tailwind defaults or custom theme overrides"
+        },
+        "spacing": {
+          "note": "Tailwind spacing scale (0.25rem increments)"
+        },
+        "typography": {
+          "note": "System fonts or Tailwind defaults"
+        }
+      }
+    },
+    {
+      "name": "vue-material-dashboard",
+      "framework": "Vue 3 + Material Design",
+      "components": [
+        "Button",
+        "Card",
+        "Table",
+        "Form",
+        "Input",
+        "Select",
+        "Modal",
+        "Dialog",
+        "Navbar",
+        "Sidebar",
+        "Menu",
+        "Tooltip",
+        "Badge",
+        "Chip",
+        "Snackbar",
+        "Progress",
+        "Slider",
+        "Checkbox"
+      ],
+      "tokens": {
+        "colors": {
+          "note": "Uses Tailwind defaults or custom theme overrides"
+        },
+        "spacing": {
+          "note": "Tailwind spacing scale (0.25rem increments)"
+        },
+        "typography": {
+          "note": "System fonts or Tailwind defaults"
+        }
+      }
+    },
+    {
+      "name": "bootstrap-adminty",
+      "framework": "HTML + Bootstrap",
+      "components": [
+        "Button",
+        "Card",
+        "Table",
+        "Form",
+        "Input",
+        "Modal",
+        "Navbar",
+        "Sidebar",
+        "Dropdown",
+        "Badge",
+        "Alert",
+        "Toast",
+        "Breadcrumb",
+        "Tabs",
+        "Panel",
+        "Progress",
+        "Pagination"
+      ],
+      "tokens": {
+        "colors": {
+          "note": "Uses Tailwind defaults or custom theme overrides"
+        },
+        "spacing": {
+          "note": "Tailwind spacing scale (0.25rem increments)"
+        },
+        "typography": {
+          "note": "System fonts or Tailwind defaults"
+        }
+      }
+    },
+    {
+      "name": "radiant",
+      "framework": "Next.js + Tailwind",
+      "components": [
+        "Button",
+        "BentoCard",
+        "Container",
+        "Footer",
+        "Navbar",
+        "Card",
+        "Avatar",
+        "Badge",
+        "Form",
+        "Input",
+        "Typography"
+      ],
+      "tokens": {
+        "colors": {
+          "note": "Uses Tailwind defaults or custom theme overrides"
+        },
+        "spacing": {
+          "note": "Tailwind spacing scale (0.25rem increments)"
+        },
+        "typography": {
+          "note": "System fonts or Tailwind defaults"
+        }
+      }
+    },
+    {
+      "name": "protocol",
+      "framework": "Next.js + Tailwind",
+      "components": [
+        "Button",
+        "Card",
+        "Container",
+        "Footer",
+        "Navbar",
+        "Sidebar",
+        "Hero",
+        "Feature",
+        "CTA",
+        "Testimonial",
+        "FAQ",
+        "Blog"
+      ],
+      "tokens": {
+        "colors": {
+          "note": "Uses Tailwind defaults or custom theme overrides"
+        },
+        "spacing": {
+          "note": "Tailwind spacing scale (0.25rem increments)"
+        },
+        "typography": {
+          "note": "System fonts or Tailwind defaults"
+        }
+      }
+    }
+  ]
+}

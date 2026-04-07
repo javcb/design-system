@@ -1,0 +1,130 @@
+{
+  "colors": {
+    "primary": {
+      "candidates": [
+        {
+          "color": "teal-500",
+          "frequency": 135,
+          "used_by": ["appy-next"],
+          "variants": ["teal-400", "teal-600"]
+        },
+        {
+          "color": "blue-600",
+          "frequency": 16,
+          "used_by": ["docs-next"],
+          "variants": ["blue-400", "blue-500"]
+        },
+        {
+          "color": "none",
+          "frequency": 0,
+          "used_by": ["_UI Sandbox", "nextjs-saas-starter"],
+          "note": "_UI Sandbox uses neutrals only; nextjs-saas uses semantic 'primary' token"
+        }
+      ],
+      "CONFLICT": "appy-next (teal-500) vs docs-next (blue-600) vs _UI Sandbox (neutral-only) vs nextjs-saas (semantic 'primary')"
+    },
+    "neutral": {
+      "candidates": [
+        {"palette": "gray", "used_by": ["appy-next"], "values": ["gray-100", "gray-300", "gray-400", "gray-600", "gray-800", "gray-900"]},
+        {"palette": "slate", "used_by": ["docs-next", "_UI Sandbox"], "values": ["slate-100", "slate-200", "slate-400", "slate-500", "slate-700", "slate-800", "slate-900"]},
+        {"palette": "zinc", "used_by": ["_UI Sandbox"], "values": ["zinc-100", "zinc-400", "zinc-500", "zinc-600", "zinc-700", "zinc-800", "zinc-900"]},
+        {"palette": "semantic", "used_by": ["nextjs-saas-starter"], "values": ["muted", "foreground", "border"]}
+      ],
+      "CONFLICT": "Three different neutral palettes: gray (appy-next), slate/zinc (_UI Sandbox), slate (docs-next), semantic (nextjs-saas)"
+    },
+    "accent": {
+      "candidates": ["purple-500", "indigo-500", "pink-500", "sky-400"],
+      "note": "No consensus - used inconsistently"
+    },
+    "error": {
+      "candidates": ["pink-500", "semantic: destructive"],
+      "note": "Not explicitly used in high-frequency utility analysis"
+    },
+    "surface": {
+      "candidates": ["white"],
+      "consensus": "ALL KITS AGREE - white is surface color (frequency 154-179)"
+    }
+  },
+  "spacing": {
+    "baseUnit": "4px",
+    "scale": ["0", "1", "2", "3", "4", "5", "6", "8", "12", "16", "20", "auto", "full"],
+    "consensus": "100% AGREEMENT - All kits use identical Tailwind spacing scale"
+  },
+  "typography": {
+    "fontFamilies": ["system-ui", "ui-sans-serif", "sans-serif"],
+    "scale": ["xs", "sm", "base", "lg", "xl", "2xl"],
+    "weights": ["400", "500", "600", "700"],
+    "consensus": "100% AGREEMENT - All kits use Tailwind defaults, no custom typography detected"
+  },
+  "radii": {
+    "candidates": ["none", "sm", "md", "lg", "xl", "full"],
+    "most_used": ["rounded-full", "rounded-md", "rounded-lg", "rounded-xl"],
+    "consensus": "100% AGREEMENT - Standard Tailwind radius scale"
+  },
+  "shadows": {
+    "candidates": ["shadow-xs", "shadow-sm", "shadow-md", "shadow-lg", "shadow-xl"],
+    "consensus": "100% AGREEMENT - Standard Tailwind shadow scale"
+  },
+  "conflicts": [
+    {
+      "id": "conflict-001-primary-color",
+      "severity": "CRITICAL",
+      "type": "Primary Color Palette",
+      "kits_affected": ["appy-next", "docs-next", "_UI Sandbox", "nextjs-saas-starter"],
+      "details": {
+        "appy-next": "teal-500 (freq: 135) + teal-400/600 variants",
+        "docs-next": "blue-600 (freq: 16) + blue-400/500 variants",
+        "_UI Sandbox": "no primary - neutral-first design using slate/zinc/neutral",
+        "nextjs-saas-starter": "semantic token 'primary' (freq: 51) - no concrete color mapped"
+      },
+      "impact": "Impossible to build consistent primary component without choosing one approach",
+      "decision_required": true
+    },
+    {
+      "id": "conflict-002-neutral-palette",
+      "severity": "CRITICAL",
+      "type": "Neutral Color Palette",
+      "kits_affected": ["appy-next", "docs-next", "_UI Sandbox", "nextjs-saas-starter"],
+      "details": {
+        "appy-next": "gray-100 through gray-900",
+        "_UI Sandbox": "slate-300 through slate-900 + zinc-100 through zinc-900 + neutral-600/950",
+        "docs-next": "slate-100 through slate-900",
+        "nextjs-saas-starter": "semantic names (muted, foreground, border) with no concrete colors in utility analysis"
+      },
+      "impact": "Neutral colors foundational to contrast ratios and accessibility - must align",
+      "decision_required": true
+    },
+    {
+      "id": "conflict-003-token-architecture",
+      "severity": "CRITICAL",
+      "type": "Concrete vs Semantic Token Naming",
+      "kits_affected": ["appy-next", "docs-next", "_UI Sandbox", "nextjs-saas-starter"],
+      "details": {
+        "group_1": "appy-next, docs-next, _UI Sandbox use concrete Tailwind color names (teal-500, gray-800, slate-700, etc)",
+        "group_2": "nextjs-saas-starter uses semantic naming (primary, accent, muted, background, foreground, border, destructive, sidebar, input, popover)"
+      },
+      "impact": "CANNOT MIX APPROACHES - creates two incompatible token systems. Must choose one globally.",
+      "decision_required": true,
+      "recommendation": "Adopt semantic tokens (nextjs-saas-starter pattern). More maintainable, brand-agnostic, easier to theme later."
+    },
+    {
+      "id": "conflict-004-accent-color",
+      "severity": "MEDIUM",
+      "type": "Accent Color Role Undefined",
+      "candidates_used": ["purple-500", "indigo-500", "pink-500", "sky-400"],
+      "impact": "Secondary UI elements appear inconsistent across kits",
+      "decision_required": true
+    }
+  ],
+  "summary": {
+    "critical_decisions": 3,
+    "areas_with_consensus": [
+      "Spacing (all identical)",
+      "Typography defaults (all identical)",
+      "Border radius (all standard Tailwind)",
+      "Shadows (all standard Tailwind)",
+      "Surface color = white (100% agreement)"
+    ],
+    "recommendation": "Adopt semantic token architecture. Map: primary=teal-500 or blue-600 (choose), neutral=slate (most common), accent=purple-500, error=pink-500"
+  }
+}
