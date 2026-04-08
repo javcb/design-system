@@ -61,7 +61,7 @@ export const Radio = React.forwardRef<HTMLInputElement, RadioProps>(
           />
 
           {/* Custom Radio Circle */}
-          <div className={radioBaseClasses}>
+          <div aria-hidden="true" className={radioBaseClasses}>
             {isChecked && (
               <div className="absolute inset-1.5 rounded-full bg-primary" />
             )}

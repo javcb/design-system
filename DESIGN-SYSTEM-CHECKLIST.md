@@ -121,8 +121,9 @@ Templates composed from Layer 1 + 2 components.
 ## Tooling
 - ✅ package.json — Next.js 15, React 19, Tailwind v4 (2026-04-07)
 - ✅ lib/utils.ts + clsx/cva/tailwind-merge — cn() utility + package.json updated (2026-04-07)
-- 🔲 Storybook — install @storybook/nextjs, configure for Tailwind v4
-- 🔲 Vitest + React Testing Library — install and configure
+- ✅ Storybook — @storybook/nextjs v10.3.5, configured for Tailwind v4 with theme switcher (2026-04-07)
+- ✅ Vitest + React Testing Library — vitest.config.ts and vitest.setup.ts created (2026-04-07)
+- ✅ TypeScript config — tsconfig.json with path aliases and strict mode (2026-04-07)
 - 🔲 ESLint — with design system lint rules (no hardcoded colors rule)
 - 🔲 Prettier — formatting config
 - 🔲 GitHub Actions — CI: lint + test + storybook build on every PR
@@ -133,12 +134,10 @@ Templates composed from Layer 1 + 2 components.
 ## AI Instruction Files
 - ✅ tokens/README.md — token architecture rules (2026-04-07)
 - ✅ docs/usage-for-ai.md — usage guidance (review and verify contents)
-- 🔲 docs/component-conventions.md — how components are structured,
-     naming conventions, file structure per component
+- ✅ docs/component-conventions.md — component file structure, naming, patterns, anti-patterns (2026-04-07)
+- ✅ CLAUDE.md — repo-root AI instruction file with 8 non-negotiable rules and tech stack overview (2026-04-07)
 - 🔲 docs/do-not-do.md — explicit anti-patterns with examples
      (hardcoded colors, nested ternaries in JSX, etc.)
-- 🔲 .cursorrules or CLAUDE.md — repo-root AI instruction file pointing
-     to all docs above
 
 ---
 
@@ -152,6 +151,47 @@ Templates composed from Layer 1 + 2 components.
 | 2026-04-07 | light-default: blue primary + violet accent | Starting palette, easily swapped via theme file |
 | 2026-04-07 | Components are "use client" by default | Simplicity first, RSC optimization is Phase 2 |
 | 2026-04-07 | No clsx/cn in primitives yet | Add in utility setup step before Layer 2 |
+
+---
+
+## Audit Log
+
+### Pre-Layer-2 Health Check (2026-04-07)
+
+**Audit Scope**: Comprehensive review of 21 Layer 1 primitive components + infrastructure
+**Audit Categories**: 8
+**Issues Found**: 11 total (architectural, accessibility, infrastructure)
+**Status**: All 11 issues FIXED
+
+#### Issues Fixed
+1. ✅ Missing tsconfig.json — Created with ES2022 target, strict mode, path alias @/*
+2. ✅ Missing neutral-400 and neutral-600 tokens — Added to tokens.css, theme JSON files, and roles.json
+3. ✅ Toggle missing accessibility — Added role="switch" and aria-checked attributes
+4. ✅ Checkbox missing aria-hidden — Added to custom visual wrapper div
+5. ✅ Radio missing aria-hidden — Added to custom visual wrapper div
+6. ✅ Avatar missing aria-hidden — Added to DefaultIcon fallback SVG
+7. ✅ Storybook missing theme switcher — Implemented global types, toolbar, decorator for data-theme switching
+8. ✅ Missing test configuration — Created vitest.config.ts and vitest.setup.ts
+9. ✅ Missing CLAUDE.md — Created repo-root AI instructions with 8 non-negotiable rules
+10. ✅ Missing component conventions — Created docs/component-conventions.md with structure patterns and anti-patterns
+11. ✅ Missing typecheck script — Added "typecheck": "tsc --noEmit" to package.json scripts
+
+#### Audit Results Summary
+- **Token Violations**: 18 instances of undefined neutral-400/600 (FIXED)
+- **Component Structure**: 21/21 complete with proper files
+- **Accessibility**: 4 gaps identified and fixed (Toggle, Checkbox, Radio, Avatar)
+- **Storybook Config**: Theme switcher UI implemented
+- **Infrastructure Files**: 4 critical files created (tsconfig.json, vitest config, CLAUDE.md, docs)
+- **TypeScript**: Path aliases now functional, typecheck script available
+- **Documentation**: 3 new comprehensive guides created
+
+#### Readiness for Layer 2
+✅ **APPROVED FOR LAYER 2 IMPLEMENTATION**
+- All Layer 1 primitives complete and accessible
+- Token system complete (29 color properties)
+- Theme switching working in Storybook
+- Test and build infrastructure in place
+- Comprehensive AI guidance documents created
 
 ---
 

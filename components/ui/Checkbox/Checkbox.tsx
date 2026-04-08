@@ -102,7 +102,7 @@ export const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
           />
 
           {/* Custom Checkbox Box */}
-          <div className={checkboxBaseClasses}>
+          <div aria-hidden="true" className={checkboxBaseClasses}>
             {(isChecked || indeterminate) && (
               <div className="absolute inset-0 flex items-center justify-center">
                 <CheckIcon indeterminate={indeterminate} />
