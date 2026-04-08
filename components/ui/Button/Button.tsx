@@ -44,7 +44,9 @@ const spinnerSizeMap = {
 // ─────────────────────────────────────────
 // TypeScript Interface
 // ─────────────────────────────────────────
-export interface ButtonProps extends VariantProps<typeof buttonVariants> {
+export interface ButtonProps extends Omit<VariantProps<typeof buttonVariants>, 'variant' | 'size'> {
+  variant?: 'primary' | 'secondary' | 'ghost' | 'destructive' | 'accent';
+  size?: 'sm' | 'md' | 'lg';
   disabled?: boolean;
   isLoading?: boolean;
   leftIcon?: React.ReactNode;

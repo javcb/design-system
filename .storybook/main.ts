@@ -9,12 +9,25 @@ const config: StorybookConfig = {
   addons: [],
   framework: {
     name: '@storybook/nextjs',
-    options: {},
+    options: {
+      nextConfigPath: '../next.config.ts',
+    },
   },
   docs: {
     autodocs: 'tag',
   },
   staticDirs: ['../public'],
+  typescript: {
+    check: false,
+    reactDocgen: 'react-docgen-typescript',
+    reactDocgenTypescriptOptions: {
+      shouldExtractLiteralValuesFromEnum: true,
+      propFilter: (prop) =>
+        prop.parent
+          ? !prop.parent.fileName.includes('node_modules')
+          : true,
+    },
+  },
   webpackFinal: async (config) => {
     if (config.resolve) {
       config.resolve.alias = {
