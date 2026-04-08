@@ -15,6 +15,7 @@ export * from './Progress';
 export * from './Modal';
 export * from './Drawer';
 export * from './Popover';
+export * from './DropdownMenu';
 export * from './Tag';
 export * from './Label';
 export * from './HelperText';

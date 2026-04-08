@@ -75,7 +75,7 @@ These compose primitives. Build only after Layer 1 items they depend on are comp
 - ✅ Modal/Dialog — with backdrop, focus trap, escape key handling (2026-04-08)
 - ✅ Drawer — side panel with 4 positions (2026-04-08)
 - ✅ Popover — anchored overlay with 4 positions (2026-04-08)
-- 🔲 DropdownMenu — anchored menu (needs: Button, Divider)
+- ✅ DropdownMenu — anchored menu, keyboard nav, focus management (2026-04-08)
 
 ### Navigation
 - 🔲 Tabs — horizontal and vertical (needs: Text)
@@ -206,23 +206,23 @@ Templates composed from Layer 1 + 2 components.
 
 ## Layer 2 Progress Summary (2026-04-08)
 
-**Session Achievement**: Built 9 composite components in single session.
+**Session Achievement**: Built 10 composite components (4 Feedback, 4 Overlays, 2 closed TypeScript/token fixes).
 
 ### Feedback Section: ✅ COMPLETE (4/4)
 All feedback components complete with accessibility and dark mode support.
 
-### Overlays Section: 3/4 Complete
+### Overlays Section: ✅ COMPLETE (4/4)
 - ✅ Modal/Dialog (with backdrop, focus trap, escape key handling)
 - ✅ Drawer (4-position variants: left, right, top, bottom)
 - ✅ Popover (anchored overlay with 4 positions)
-- 🔲 DropdownMenu (anchored menu, needs: Button, Divider)
+- ✅ DropdownMenu (anchored menu, keyboard navigation, focus management, 6 story variants)
 
 ### Remaining Layer 2 Categories
 - Navigation: 0/5 (Tabs, Breadcrumb, Pagination, Navbar, Sidebar)
 - Data Display: 0/5 (Card, Table, DataGrid, Stat, List)
 - Forms: 0/8 (FormField, FormGroup, SearchInput, DatePicker, FileUpload, etc.)
 
-**Total Layer 2 Status**: 7/26 complete (27%)
+**Total Layer 2 Status**: 8/26 complete (31%)
 
 ---
 
