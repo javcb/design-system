@@ -35,11 +35,8 @@ const preview: Preview = {
         document.documentElement.setAttribute('data-theme', theme);
       }
 
-      // Determine background color based on theme
-      const bgColor = theme === 'dark-default' ? '#0f172a' : '#ffffff';
-
       return (
-        <div style={{ backgroundColor: bgColor, minHeight: '100vh', padding: '2rem' }}>
+        <div data-theme={theme} style={{ minHeight: '100vh', padding: '2rem' }}>
           <Story />
         </div>
       );

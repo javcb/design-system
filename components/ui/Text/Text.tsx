@@ -49,6 +49,11 @@ const textVariants = cva('', {
 });
 
 // ─────────────────────────────────────────
+// Union type for all possible HTML element types
+// ─────────────────────────────────────────
+type TextElement = HTMLParagraphElement | HTMLSpanElement | HTMLDivElement | HTMLLabelElement;
+
+// ─────────────────────────────────────────
 // Line clamp helper
 // ─────────────────────────────────────────
 const getLineClamp = (clamp?: 1 | 2 | 3 | 4) => {
@@ -69,7 +74,7 @@ export interface TextProps extends VariantProps<typeof textVariants> {
 // ─────────────────────────────────────────
 // Text Component
 // ─────────────────────────────────────────
-export const Text = React.forwardRef<HTMLElement, TextProps>(
+export const Text = React.forwardRef<TextElement, TextProps>(
   (
     {
       as: Component = 'p',
@@ -96,7 +101,7 @@ export const Text = React.forwardRef<HTMLElement, TextProps>(
     const combined = cn(baseClasses, lineClampClasses, className);
 
     return (
-      <Component ref={ref} className={combined} {...props}>
+      <Component ref={ref as any} className={combined} {...props}>
         {children}
       </Component>
     );
