@@ -28,24 +28,28 @@
 ## Layer 1 — Primitive Components
 These are the atoms. No primitive component depends on another component.
 
+**STATUS: ✅ ALL LAYER 1 PRIMITIVES COMPLETE (2026-04-07)**
+
+All 25 primitive components are complete and ready for Layer 2 composition. Batch A–H implementation finished.
+
 ### Actions
 - ✅ Button — 5 variants, 3 sizes, loading/disabled/icon states (2026-04-07)
 - ✅ IconButton — square button, icon-only, same variants as Button (2026-04-07)
 - ✅ Link — styled anchor, inline and standalone variants (2026-04-07)
 
 ### Inputs
-- 🔲 Input — text input, all states (default, focus, error, disabled)
-- 🔲 Textarea — multiline input
-- 🔲 Select — native select with custom styling
-- 🔲 Checkbox — with label, indeterminate state
-- 🔲 Radio — with label, group pattern
-- 🔲 Toggle/Switch — boolean toggle
-- 🔲 Label — form label, required indicator
-- 🔲 HelperText — field description and error message
+- ✅ Input — text input, all states (default, focus, error, disabled), left/right icons and addons (2026-04-07)
+- ✅ Textarea — multiline input, character counter with 80% warning, resize control (2026-04-07)
+- ✅ Select — native select with custom chevron-down icon, placeholder option (2026-04-07)
+- ✅ Checkbox — with label, description, indeterminate state, custom styled checkbox (2026-04-07)
+- ✅ Radio — with label, description, custom circular indicator (2026-04-07)
+- ✅ Toggle/Switch — boolean toggle, 3 sizes, track/thumb animation (2026-04-07)
+- ✅ Label — form label with required/optional indicators (2026-04-07)
+- ✅ HelperText — field description and error message (2026-04-07)
 
 ### Display
 - ✅ Badge — 7 variants, optional dot, 2 sizes (2026-04-07)
-- 🔲 Avatar — image, initials, fallback, sizes
+- ✅ Avatar — image, initials, icon fallback, 6 sizes, circle/square shapes, status indicator dot (2026-04-07)
 - ✅ Tag/Chip — dismissible with onDismiss callback, 3 variants, 2 sizes (2026-04-07)
 - ✅ Spinner — standalone, 5 sizes, 3 variants, extracted from Button/IconButton (2026-04-07)
 - ✅ Skeleton — loading placeholder, 4 variants (block/text/circle/avatar), multi-line support (2026-04-07)
