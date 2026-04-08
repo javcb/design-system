@@ -44,17 +44,17 @@ These are the atoms. No primitive component depends on another component.
 - 🔲 HelperText — field description and error message
 
 ### Display
-- 🔲 Badge — status, count, dot variants
+- ✅ Badge — 7 variants, optional dot, 2 sizes (2026-04-07)
 - 🔲 Avatar — image, initials, fallback, sizes
-- 🔲 Tag/Chip — dismissible, non-dismissible
+- ✅ Tag/Chip — dismissible with onDismiss callback, 3 variants, 2 sizes (2026-04-07)
 - ✅ Spinner — standalone, 5 sizes, 3 variants, extracted from Button/IconButton (2026-04-07)
 - ✅ Skeleton — loading placeholder, 4 variants (block/text/circle/avatar), multi-line support (2026-04-07)
 - ✅ Divider — horizontal/vertical, 3 variants, optional label, spacing control (2026-04-07)
 
 ### Typography
-- 🔲 Heading — h1–h6, mapped to type scale
-- 🔲 Text — body copy, size and weight variants
-- 🔲 Code — inline and block, monospace
+- ✅ Heading — h1–h6, decoupled size, 7 sizes, 4 weights, 4 colors, align & truncate (2026-04-07)
+- ✅ Text — generic p/span/div/label/strong/em, 5 sizes, 4 weights, 7 colors, line clamp (2026-04-07)
+- ✅ Code — inline and block variants, optional language badge, monospace (2026-04-07)
 
 ---
 
@@ -88,6 +88,8 @@ These compose primitives. Build only after Layer 1 items they depend on are comp
 - 🔲 List — vertical list with optional icons/avatars
 
 ### Forms
+- ✅ Label — form label with required/optional indicators (2026-04-07)
+- ✅ HelperText — below-field helper with 4 variants, optional icons (2026-04-07)
 - 🔲 FormField — Label + Input + HelperText composition (needs: all Input primitives)
 - 🔲 FormGroup — fieldset grouping
 - 🔲 SearchInput — Input with leading icon and clear button (needs: Input, IconButton)
