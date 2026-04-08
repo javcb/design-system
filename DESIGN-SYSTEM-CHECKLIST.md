@@ -84,12 +84,12 @@ These compose primitives. Build only after Layer 1 items they depend on are comp
 - ✅ Navbar — responsive, mobile collapse, sticky support, hamburger menu (2026-04-08)
 - ✅ Sidebar — vertical nav, collapse state, context-based layout (2026-04-08)
 
-### Data Display
-- 🔲 Card — surface container, header/body/footer slots (needs: Heading, Text, Button)
-- 🔲 Table — sortable, with pagination (needs: Checkbox, Badge, Button, Pagination)
-- 🔲 DataGrid — advanced table (needs: Table)
-- 🔲 Stat — metric with label and trend (needs: Text, Badge)
-- 🔲 List — vertical list with optional icons/avatars
+### Data Display — ✅ COMPLETE (5/5)
+- ✅ Card — surface container, header/body/footer slots, 4 variants, 4 padding options (2026-04-08)
+- ✅ Table — sortable columns, striped/hoverable variants, sticky header, row selection (2026-04-08)
+- ✅ DataGrid — search, sort, paginate, select with Table integration (2026-04-08)
+- ✅ Stat — metric with label, value, trend indicator, 2 variants (2026-04-08)
+- ✅ List — vertical list with avatars, badges, dividers, ordered variants (2026-04-08)
 
 ### Forms
 - 🔲 FormField — Label + Input + HelperText composition (needs: all Input primitives)
@@ -223,11 +223,13 @@ All feedback components complete with accessibility and dark mode support.
 - ✅ Navbar (responsive, mobile collapse, sticky support, hamburger menu)
 - ✅ Sidebar (collapse state, context-based layout, responsive width)
 
-### Remaining Layer 2 Categories
-- Data Display: 0/5 (Card, Table, DataGrid, Stat, List)
-- Forms: 0/5 (FormField, FormGroup, SearchInput, DatePicker, FileUpload)
+### Data Display Section — ✅ COMPLETE (5/5)
+- ✅ Card, Table, DataGrid, Stat, List — All 5 components complete
 
-**Total Layer 2 Status**: 13/23 complete (57%)
+### Forms Section (not started)
+- 🔲 FormField, FormGroup, SearchInput, DatePicker, FileUpload (0/5)
+
+**Total Layer 2 Status**: 18/23 complete (78%)
 
 ---
 
