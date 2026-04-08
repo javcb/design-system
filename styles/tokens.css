@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+/* ── Default theme (light-default) applied to :root ── */
+@theme {
+  /* Brand & Primary */
+  --color-brand: #2563eb;
+  --color-primary: #2563eb;
+  --color-primary-hover: #1d4ed8;
+  --color-primary-subtle: #eff6ff;
+
+  /* Accent */
+  --color-accent: #7c3aed;
+  --color-accent-hover: #6d28d9;
+  --color-accent-subtle: #f5f3ff;
+
+  /* Neutrals */
+  --color-neutral-900: #0f172a;
+  --color-neutral-700: #334155;
+  --color-neutral-500: #64748b;
+  --color-neutral-300: #cbd5e1;
+  --color-neutral-100: #f1f5f9;
+  --color-neutral-50: #f8fafc;
+
+  /* Surfaces */
+  --color-surface: #ffffff;
+  --color-surface-raised: #f8fafc;
+  --color-surface-overlay: #ffffff;
+
+  /* Semantic states */
+  --color-error: #dc2626;
+  --color-error-subtle: #fef2f2;
+  --color-success: #16a34a;
+  --color-success-subtle: #f0fdf4;
+  --color-warning: #d97706;
+  --color-warning-subtle: #fffbeb;
+  --color-info: #2563eb;
+  --color-info-subtle: #eff6ff;
+
+  /* Interaction */
+  --color-focus-ring: #2563eb;
+  --color-text-on-primary: #ffffff;
+  --color-text-on-accent: #ffffff;
+
+  /* Typography */
+  --font-sans: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono: ui-monospace, "JetBrains Mono", monospace;
+
+  /* Spacing base — 4px */
+  --spacing: 0.25rem;
+}
+
+/* ── dark-default theme ── */
+[data-theme="dark-default"] {
+  --color-brand: #60a5fa;
+  --color-primary: #60a5fa;
+  --color-primary-hover: #93c5fd;
+  --color-primary-subtle: #1e3a8a;
+  --color-accent: #a78bfa;
+  --color-accent-hover: #c4b5fd;
+  --color-accent-subtle: #4c1d95;
+  --color-neutral-900: #f8fafc;
+  --color-neutral-700: #cbd5e1;
+  --color-neutral-500: #94a3b8;
+  --color-neutral-300: #334155;
+  --color-neutral-100: #1e293b;
+  --color-neutral-50: #0f172a;
+  --color-surface: #0f172a;
+  --color-surface-raised: #1e293b;
+  --color-surface-overlay: #334155;
+  --color-error: #f87171;
+  --color-error-subtle: #450a0a;
+  --color-success: #4ade80;
+  --color-success-subtle: #052e16;
+  --color-warning: #fbbf24;
+  --color-warning-subtle: #451a03;
+  --color-info: #60a5fa;
+  --color-info-subtle: #1e3a8a;
+  --color-focus-ring: #60a5fa;
+  --color-text-on-primary: #0f172a;
+  --color-text-on-accent: #ffffff;
+}
+
+/* ── System dark mode fallback (if no data-theme set) ── */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --color-brand: #60a5fa;
+    --color-primary: #60a5fa;
+    --color-primary-hover: #93c5fd;
+    --color-primary-subtle: #1e3a8a;
+    --color-accent: #a78bfa;
+    --color-accent-hover: #c4b5fd;
+    --color-accent-subtle: #4c1d95;
+    --color-neutral-900: #f8fafc;
+    --color-neutral-700: #cbd5e1;
+    --color-neutral-500: #94a3b8;
+    --color-neutral-300: #334155;
+    --color-neutral-100: #1e293b;
+    --color-neutral-50: #0f172a;
+    --color-surface: #0f172a;
+    --color-surface-raised: #1e293b;
+    --color-surface-overlay: #334155;
+    --color-error: #f87171;
+    --color-error-subtle: #450a0a;
+    --color-success: #4ade80;
+    --color-success-subtle: #052e16;
+    --color-warning: #fbbf24;
+    --color-warning-subtle: #451a03;
+    --color-info: #60a5fa;
+    --color-info-subtle: #1e3a8a;
+    --color-focus-ring: #60a5fa;
+    --color-text-on-primary: #0f172a;
+    --color-text-on-accent: #ffffff;
+  }
+}

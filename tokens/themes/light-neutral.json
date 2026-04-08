@@ -1,0 +1,6 @@
+{
+  "theme": "light-neutral",
+  "mode": "light",
+  "description": "Neutral-first light theme. No chromatic primary — slate-based. Ideal for dashboards and data-heavy UIs. STUB — tokens not yet defined.",
+  "tokens": {}
+}
