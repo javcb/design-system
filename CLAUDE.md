@@ -1,13 +1,15 @@
 # Claude AI Session Instructions
 
-## Required Reading (IN ORDER)
+## Required Reading (in order)
 
-Before any session begins, you MUST read these files in this exact order:
-
-1. **DESIGN-SYSTEM-CHECKLIST.md** — Project status, completed items, pending tasks
-2. **tokens/README.md** — Token architecture rules (DO NOT SKIP)
-3. **docs/usage-for-ai.md** — How to use the design system (DO NOT SKIP)
-4. **docs/component-conventions.md** — Component structure and patterns
+1. global-docs/ai-instructions/universal-rules.md
+   — universal rules for all repos
+2. global-docs/ai-instructions/per-repo/design-system.md
+   — design system specific context
+3. DESIGN-SYSTEM-CHECKLIST.md — current layer status
+4. tokens/README.md — token architecture and rules
+5. docs/usage-for-ai.md — component usage patterns
+6. docs/component-conventions.md — file structure and naming
 
 ---
 
