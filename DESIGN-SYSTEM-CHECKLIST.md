@@ -92,8 +92,6 @@ These compose primitives. Build only after Layer 1 items they depend on are comp
 - 🔲 List — vertical list with optional icons/avatars
 
 ### Forms
-- ✅ Label — form label with required/optional indicators (2026-04-07)
-- ✅ HelperText — below-field helper with 4 variants, optional icons (2026-04-07)
 - 🔲 FormField — Label + Input + HelperText composition (needs: all Input primitives)
 - 🔲 FormGroup — fieldset grouping
 - 🔲 SearchInput — Input with leading icon and clear button (needs: Input, IconButton)
@@ -206,7 +204,8 @@ Templates composed from Layer 1 + 2 components.
 
 ## Layer 2 Progress Summary (2026-04-08)
 
-**Session Achievement**: Built 10 composite components (4 Feedback, 4 Overlays, 2 closed TypeScript/token fixes).
+**Session Achievement**: Built 8 composite components across Feedback + Overlays sections.
+**Note**: Label and HelperText are Layer 1 primitives, not counted in Layer 2 (corrected from 26 to 23 in audit).
 
 ### Feedback Section: ✅ COMPLETE (4/4)
 All feedback components complete with accessibility and dark mode support.
@@ -215,14 +214,14 @@ All feedback components complete with accessibility and dark mode support.
 - ✅ Modal/Dialog (with backdrop, focus trap, escape key handling)
 - ✅ Drawer (4-position variants: left, right, top, bottom)
 - ✅ Popover (anchored overlay with 4 positions)
-- ✅ DropdownMenu (anchored menu, keyboard navigation, focus management, 6 story variants)
+- ✅ DropdownMenu (anchored menu, keyboard navigation, focus management)
 
 ### Remaining Layer 2 Categories
 - Navigation: 0/5 (Tabs, Breadcrumb, Pagination, Navbar, Sidebar)
 - Data Display: 0/5 (Card, Table, DataGrid, Stat, List)
-- Forms: 0/8 (FormField, FormGroup, SearchInput, DatePicker, FileUpload, etc.)
+- Forms: 0/5 (FormField, FormGroup, SearchInput, DatePicker, FileUpload)
 
-**Total Layer 2 Status**: 8/26 complete (31%)
+**Total Layer 2 Status**: 8/23 complete (35%)
 
 ---
 
