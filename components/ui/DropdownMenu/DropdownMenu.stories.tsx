@@ -1,6 +1,6 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
-import { Button } from '@/components/ui/Button';
+import { Button } from '../Button';
 import {
   DropdownMenu,
   DropdownMenuTrigger,

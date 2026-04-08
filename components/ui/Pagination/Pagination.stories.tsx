@@ -10,7 +10,7 @@ import {
   PaginationEllipsis,
   PaginationController,
 } from './Pagination';
-import { Text } from '@/components/ui/Text';
+import { Text } from '../Text';
 
 // ─────────────────────────────────────────
 // Meta

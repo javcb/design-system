@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Link } from '@/components/ui/Link';
+import { Link } from '../Link';
 import { cn } from '@/lib/utils';
 
 // ─────────────────────────────────────────

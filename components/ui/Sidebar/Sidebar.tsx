@@ -3,7 +3,7 @@
 import React from 'react';
 import { cva, type VariantProps } from 'class-variance-authority';
 import { cn } from '@/lib/utils';
-import { Tooltip } from '@/components/ui/Tooltip';
+import { Tooltip } from '../Tooltip';
 
 // ─────────────────────────────────────────
 // CVA Variants

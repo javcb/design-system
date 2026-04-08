@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { cn } from '@/lib/utils';
-import { IconButton } from '@/components/ui/IconButton';
+import { IconButton } from '../IconButton';
 
 // ─────────────────────────────────────────
 // TypeScript Interfaces

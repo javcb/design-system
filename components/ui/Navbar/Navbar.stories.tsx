@@ -10,7 +10,7 @@ import {
   NavbarMobileToggle,
   NavbarMobileMenu,
 } from './Navbar';
-import { Button } from '@/components/ui/Button';
+import { Button } from '../Button';
 
 // ─────────────────────────────────────────
 // Meta

@@ -13,8 +13,8 @@ import {
   SidebarFooter,
   SidebarCollapseToggle,
 } from './Sidebar';
-import { Badge } from '@/components/ui/Badge';
-import { Button } from '@/components/ui/Button';
+import { Badge } from '../Badge';
+import { Button } from '../Button';
 
 // ─────────────────────────────────────────
 // Meta

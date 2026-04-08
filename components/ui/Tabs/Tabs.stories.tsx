@@ -1,7 +1,7 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from './Tabs';
-import { Text } from '@/components/ui/Text';
+import { Text } from '../Text';
 
 // ─────────────────────────────────────────
 // Meta
