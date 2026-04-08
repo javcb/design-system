@@ -30,8 +30,8 @@ These are the atoms. No primitive component depends on another component.
 
 ### Actions
 - ✅ Button — 5 variants, 3 sizes, loading/disabled/icon states (2026-04-07)
-- 🔲 IconButton — square button, icon-only, same variants as Button
-- 🔲 Link — styled anchor, inline and standalone variants
+- ✅ IconButton — square button, icon-only, same variants as Button (2026-04-07)
+- ✅ Link — styled anchor, inline and standalone variants (2026-04-07)
 
 ### Inputs
 - 🔲 Input — text input, all states (default, focus, error, disabled)
@@ -47,9 +47,9 @@ These are the atoms. No primitive component depends on another component.
 - 🔲 Badge — status, count, dot variants
 - 🔲 Avatar — image, initials, fallback, sizes
 - 🔲 Tag/Chip — dismissible, non-dismissible
-- 🔲 Spinner — standalone (already used inside Button)
-- 🔲 Skeleton — loading placeholder, block and text variants
-- 🔲 Divider — horizontal and vertical
+- ✅ Spinner — standalone, 5 sizes, 3 variants, extracted from Button/IconButton (2026-04-07)
+- ✅ Skeleton — loading placeholder, 4 variants (block/text/circle/avatar), multi-line support (2026-04-07)
+- ✅ Divider — horizontal/vertical, 3 variants, optional label, spacing control (2026-04-07)
 
 ### Typography
 - 🔲 Heading — h1–h6, mapped to type scale
@@ -114,6 +114,7 @@ Templates composed from Layer 1 + 2 components.
 
 ## Tooling
 - ✅ package.json — Next.js 15, React 19, Tailwind v4 (2026-04-07)
+- ✅ lib/utils.ts + clsx/cva/tailwind-merge — cn() utility + package.json updated (2026-04-07)
 - 🔲 Storybook — install @storybook/nextjs, configure for Tailwind v4
 - 🔲 Vitest + React Testing Library — install and configure
 - 🔲 ESLint — with design system lint rules (no hardcoded colors rule)
