@@ -1,0 +1,18 @@
+export {
+  Pagination,
+  PaginationContent,
+  PaginationItem,
+  PaginationLink,
+  PaginationPrevious,
+  PaginationNext,
+  PaginationEllipsis,
+  PaginationController,
+  type PaginationProps,
+  type PaginationContentProps,
+  type PaginationItemProps,
+  type PaginationLinkProps,
+  type PaginationPreviousProps,
+  type PaginationNextProps,
+  type PaginationEllipsisProps,
+  type PaginationControllerProps,
+} from './Pagination';

@@ -78,11 +78,11 @@ These compose primitives. Build only after Layer 1 items they depend on are comp
 - ✅ DropdownMenu — anchored menu, keyboard nav, focus management (2026-04-08)
 
 ### Navigation
-- 🔲 Tabs — horizontal and vertical (needs: Text)
-- 🔲 Breadcrumb — with separator (needs: Link, Text)
-- 🔲 Pagination — page number controls (needs: Button, IconButton)
-- 🔲 Navbar — top navigation shell (needs: Button, Link, Avatar)
-- 🔲 Sidebar — vertical nav (needs: Link, Badge, Avatar)
+- ✅ Tabs — horizontal and vertical with keyboard nav, focus management (2026-04-08)
+- ✅ Breadcrumb — with separator, ellipsis, custom separators (2026-04-08)
+- ✅ Pagination — page range algorithm, ellipsis, prev/next controls, PaginationController (2026-04-08)
+- ✅ Navbar — responsive, mobile collapse, sticky support, hamburger menu (2026-04-08)
+- ✅ Sidebar — vertical nav, collapse state, context-based layout (2026-04-08)
 
 ### Data Display
 - 🔲 Card — surface container, header/body/footer slots (needs: Heading, Text, Button)
@@ -204,7 +204,7 @@ Templates composed from Layer 1 + 2 components.
 
 ## Layer 2 Progress Summary (2026-04-08)
 
-**Session Achievement**: Built 8 composite components across Feedback + Overlays sections.
+**Session Achievement**: Built 13 composite components across Feedback, Overlays, and Navigation sections.
 **Note**: Label and HelperText are Layer 1 primitives, not counted in Layer 2 (corrected from 26 to 23 in audit).
 
 ### Feedback Section: ✅ COMPLETE (4/4)
@@ -216,12 +216,18 @@ All feedback components complete with accessibility and dark mode support.
 - ✅ Popover (anchored overlay with 4 positions)
 - ✅ DropdownMenu (anchored menu, keyboard navigation, focus management)
 
+### Navigation Section: ✅ COMPLETE (5/5)
+- ✅ Tabs (horizontal/vertical with keyboard nav, focus management)
+- ✅ Breadcrumb (with separator, ellipsis, custom separators)
+- ✅ Pagination (page range algorithm, ellipsis, prev/next controls, PaginationController)
+- ✅ Navbar (responsive, mobile collapse, sticky support, hamburger menu)
+- ✅ Sidebar (collapse state, context-based layout, responsive width)
+
 ### Remaining Layer 2 Categories
-- Navigation: 0/5 (Tabs, Breadcrumb, Pagination, Navbar, Sidebar)
 - Data Display: 0/5 (Card, Table, DataGrid, Stat, List)
 - Forms: 0/5 (FormField, FormGroup, SearchInput, DatePicker, FileUpload)
 
-**Total Layer 2 Status**: 8/23 complete (35%)
+**Total Layer 2 Status**: 13/23 complete (57%)
 
 ---
 
