@@ -8,8 +8,9 @@
     "build": "next build",
     "start": "next start",
     "typecheck": "tsc --noEmit",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "storybook": "storybook dev -p 6006 --no-open --ci",
+    "build-storybook": "storybook build --quiet",
+    "storybook:kill": "npx kill-port 6006 6007 6008"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.0",
