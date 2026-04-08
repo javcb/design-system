@@ -1,0 +1,24 @@
+[22:09:00.416] [INFO] storybook v10.3.5
+[22:09:02.696] [DEBUG] Getting package.json info for C:/dev/00_Github Repos/javcb/design-system/package.json...
+[22:09:08.112] [DEBUG] Serving static files from [36mpublic[39m at [36m/[39m
+[22:09:08.131] [INFO] Starting...
+[22:09:09.336] [DEBUG] Starting preview..
+[22:09:09.593] [INFO] Using implicit CSS loaders
+[22:09:10.488] [INFO] Using SWC as compiler
+[22:09:11.090] [INFO] Using default Webpack5 setup
+[22:09:20.363] [ERROR] Failed to build the preview
+[22:09:20.371] [WARN] Force closed preview build
+[22:09:20.374] [ERROR] [38;2;241;97;97mSB_BUILDER-WEBPACK5_0003 (WebpackCompilationError): There were problems when compiling your code with Webpack.
+Run Storybook with --debug-webpack for more information.[39m
+    at starter (file:///C:/dev/00_Github%20Repos/javcb/design-system/node_modules/@storybook/builder-webpack5/dist/index.js:799:11)
+    at starter.next (<anonymous>)
+    at Module.start (file:///C:/dev/00_Github%20Repos/javcb/design-system/node_modules/@storybook/builder-webpack5/dist/index.js:857:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async storybookDevServer (file:///C:/dev/00_Github%20Repos/javcb/design-system/node_modules/storybook/dist/core-server/index.js:7503:83)
+    at async buildOrThrow (file:///C:/dev/00_Github%20Repos/javcb/design-system/node_modules/storybook/dist/core-server/index.js:4508:12)
+    at async buildDevStandalone (file:///C:/dev/00_Github%20Repos/javcb/design-system/node_modules/storybook/dist/core-server/index.js:8033:41)
+    at async withTelemetry (file:///C:/dev/00_Github%20Repos/javcb/design-system/node_modules/storybook/dist/_node-chunks/chunk-FIR43JGQ.js:225:12)
+    at async dev (file:///C:/dev/00_Github%20Repos/javcb/design-system/node_modules/storybook/dist/bin/core.js:2736:3)
+    at async _Command.<anonymous> (file:///C:/dev/00_Github%20Repos/javcb/design-system/node_modules/storybook/dist/bin/core.js:2806:92)
+[22:09:20.395] [WARN] Broken build, fix the error above.
+You may need to refresh the browser.

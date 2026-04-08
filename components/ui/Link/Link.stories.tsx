@@ -141,7 +141,7 @@ export const InsideText: Story = {
       <Link variant="inline" href="#">
         an inline link
       </Link>
-      {' '}that sits naturally within body copy. The underline makes it discoverable, and hovering changes the color to show it is interactive.'}
+      {' '}that sits naturally within body copy. The underline makes it discoverable, and hovering changes the color to show it is interactive.
     </p>
   ),
 };
